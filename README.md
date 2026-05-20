@@ -1,68 +1,62 @@
+
 🏠 Unstructured Data Wrangling Pipeline
 
 🚀 Overview
 
-This project focuses on solving a real-world data problem by transforming highly unstructured housing data into a clean and structured format using Python.
+This project focuses on transforming highly unstructured housing data into a clean and structured dataset using Python.
+The raw dataset contained fragmented multi-line records, inconsistent spacing, and embedded metadata, requiring custom data wrangling and parsing techniques.
 
-Unlike standard datasets, the raw data was not in tabular form and required custom logic for parsing and reconstruction.
+❗ Challenges
 
-
-
-❗ Problem
-
-The dataset contained multiple challenges:
-
-- Records split across multiple rows
-- Irregular spacing instead of proper delimiters
-- Embedded metadata and noisy rows
-- No predefined column structure
-
-This made the dataset unsuitable for direct analysis.
-
-
+-Multi-line fragmented records
+-Irregular spacing instead of proper delimiters
+-Missing and inconsistent values
+-Non-tabular raw text structure
 
 🧠 Solution Approach
 
-- Loaded raw text data and skipped invalid rows
-- Dynamically extracted column headers
-- Identified that each record spans across two rows
-- Reconstructed complete records by merging split rows
-- Used regex-based splitting to handle inconsistent spacing
-- Converted raw text into structured tabular format
+-Loaded and filtered raw text data using Pandas
+-Extracted column headers dynamically
+-Reconstructed records split across multiple rows
+-Applied Regular Expressions (Regex) for text parsing
+-Performed data validation checks for nulls and duplicates
+-Converted cleaned data into structured CSV format
 
+📊 Exploratory Data Analysis (EDA)
 
+-Performed basic EDA after cleaning the dataset:
+-Correlation analysis
+-Distribution visualization
+-Relationship analysis between housing features and prices
+
+Key Insight
+
+Properties with a higher average number of rooms (RM) showed a positive relationship with median house prices (MEDV).
 
 🛠️ Tech Stack
 
-- Python
-- Pandas
-- Regex
-
-
+-Python
+-Pandas
+-Matplotlib
+-Seaborn
+-Regular Expressions (Regex)
 
 📂 Project Structure
 
-data/
+-Plain text
+-data/
  ├── unstructured_housing_data.txt
  ├── cleaned_housing_data.csv
+-data_cleaning.ipynb
+-data_cleaning_pipeline.py
+-README.md
 
-data_cleaning_pipeline.py
-data_cleaning.ipynb
-data_cleaning_pipeline.html
-README.md
-
-
-📊 Outcome
-
-- Successfully transformed messy raw data into structured dataset
-- Improved data usability for analysis
-- Demonstrated real-world data wrangling skills
-
-
-💼 Key Highlight
-
-This project demonstrates the ability to handle real-world messy data and build custom parsing solutions instead of relying on pre-cleaned datasets.
-
+💡 Key Highlights
+✔ Real-world messy data handling
+✔ Multi-line record reconstruction
+✔ Regex-based text parsing
+✔ Data validation and preprocessing
+✔ Exploratory Data Analysis (EDA)
 
 👩‍💻 Author
 
