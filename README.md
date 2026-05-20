@@ -7,14 +7,12 @@ This project focuses on transforming highly unstructured housing data into a cle
 The raw dataset contained fragmented multi-line records, inconsistent spacing, and embedded metadata, requiring custom data wrangling and parsing techniques.
 
 ❗ Challenges
-
 -Multi-line fragmented records
 -Irregular spacing instead of proper delimiters
 -Missing and inconsistent values
 -Non-tabular raw text structure
 
 🧠 Solution Approach
-
 -Loaded and filtered raw text data using Pandas
 -Extracted column headers dynamically
 -Reconstructed records split across multiple rows
@@ -23,18 +21,15 @@ The raw dataset contained fragmented multi-line records, inconsistent spacing, a
 -Converted cleaned data into structured CSV format
 
 📊 Exploratory Data Analysis (EDA)
-
 -Performed basic EDA after cleaning the dataset:
 -Correlation analysis
 -Distribution visualization
 -Relationship analysis between housing features and prices
 
-Key Insight
-
+Key Insight:
 Properties with a higher average number of rooms (RM) showed a positive relationship with median house prices (MEDV).
 
 🛠️ Tech Stack
-
 -Python
 -Pandas
 -Matplotlib
@@ -42,7 +37,6 @@ Properties with a higher average number of rooms (RM) showed a positive relation
 -Regular Expressions (Regex)
 
 📂 Project Structure
-
 -Plain text
 -data/
  ├── unstructured_housing_data.txt
